@@ -11,47 +11,34 @@ chip = "rp2040"
 input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
 output_pins = ["PIN_20", "PIN_19", "PIN_18", "PIN_17", "PIN_16", "PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11"]
 
-[aliases]
-ACtrl   = "LT(A, LCtrl)"
-SShift  = "LT(S, LShift)"
-DAlt    = "LT(D, LAlt)"
-FWin    = "LT(F, LGui)"
-SCCtrl  = "LT(Semicolon, RCtrl)"
-LShift  = "LT(L, RShift)"
-KAlt    = "LT(K, RAlt)"
-JWin    = "LT(J, RGui)"
-LBrack  = "LeftBracket"
-RBrack  = "RightBracket"
-BSlash  = "Backslash"
-
 [layout]
 rows = 4
 cols = 10
 layers = 4
 keymap = [
     [    
-        ["Q",                "W",                   "E",                  "R",                   "T",                   "Y",              "U",          "I",                 "O",                   "P"],      # PIN_6
-        ["ACtrl",            "SShift",              "DAlt",               "FWin",                "G",                   "H",              "JWin",       "KAlt",              "LShift",              "SCCtrl"], # PIN_7
-        ["Z",                "X",                   "C",                  "V",                   "B",                   "Quote",          "N",          "M",                 "Comma",               "Dot"],    # PIN_8
-        ["No",               "No",                  "No",                 "MO(2)",               "Space",               "Backspace",      "MO(1)",      "No",                "No",                  "No"]      # PIN_9
+        ["Q",                "W",                   "E",                       "R",                         "T",                      "Y",              "U",            "I",                 "O",                   "P"],
+        ["LT(A, LCtrl)",     "LT(S, LShift)",       "LT(D, LAlt)",             "LT(F, LGui)",               "G",                      "H",              "LT(J, RGui)",  "LT(K, RAlt)",       "LT(L, RShift)",       "LT(Semicolon, RCtrl)"],
+        ["Z",                "X",                   "C",                       "V",                         "B",                      "Quote",          "N",            "M",                 "Comma",               "Dot"],
+        ["No",               "No",                  "No",                      "MO(2)",                     "Space",                  "Backspace",      "MO(1)",        "No",                "No",                  "No"]
     ],
     [
-        ["Escape",           "WM(Grave, LShift)",  "WM(LBrack, LShift)",  "WM(RBrack, LShift)",  "Grave",               "Semicolon",      "LBrack",     "RBrack",            "WM(Kc9, RShift)",     "WM(Kc0, RShift)"],
-        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",     "WM(Kc4, LShift)",     "WM(Kc5, LShift)",     "Minus",          "OSM(RGui)",  "OSM(RAlt)",         "OSM(RShift)",         "OSM(RCtrl)"],
-        ["WM(Kc6, LShift)",  "WM(Kc7, LShift)",    "Backslash",           "Slash",               "WM(BSlash, LShift)",  "Equal",          "Plus",       "WM(Kc8, LShift)",   "WM(Slash , RShift)",  "WM(Kc1, LShift)"],
-        ["No",               "No",                 "No",                  "MO(3)",               "Space",               "Backspace",      "_",          "No",                "No",                  "No"]
+        ["Escape",           "WM(Grave, LShift)",  "WM(LeftBracket, LShift)",  "WM(RightBracket, LShift)",  "Grave",                  "Semicolon",      "LBrack",       "RBrack",            "WM(Kc9, RShift)",     "WM(Kc0, RShift)"],
+        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",          "WM(Kc4, LShift)",           "WM(Kc5, LShift)",        "Minus",          "OSM(RGui)",    "OSM(RAlt)",         "OSM(RShift)",         "OSM(RCtrl)"],
+        ["WM(Kc6, LShift)",  "WM(Kc7, LShift)",    "Backslash",                "Slash",                     "WM(Backslash, LShift)",  "Equal",          "Plus",         "WM(Kc8, LShift)",   "WM(Slash , RShift)",  "WM(Kc1, LShift)"],
+        ["No",               "No",                 "No",                       "MO(3)",                     "Space",                  "Backspace",      "_",            "No",                "No",                  "No"]
     ],
     [
-        ["Escape",           "KbMute",             "E",                   "R",                   "No",                  "PageUp",         "Home",       "Up",                "End",                 "Delete"],
-        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",           "OSM(LGui)",           "No",                  "Tab",            "Left",       "Down",              "Right",               "Enter"],
-        ["KbVolumeDown",     "KbVolumeDown",       "C",                   "V",                   "B",                   "PageDown",       "No",         "No",                "No",                  "No"],
-        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "MO(3)",      "No",                "No",                  "No"]
+        ["Escape",           "KbMute",             "E",                        "R",                         "No",                     "PageUp",         "Home",         "Up",                "End",                 "Delete"],
+        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",                "OSM(LGui)",                 "No",                     "Tab",            "Left",         "Down",              "Right",               "Enter"],
+        ["KbVolumeDown",     "KbVolumeDown",       "C",                        "V",                         "B",                      "PageDown",       "No",           "No",                "No",                  "No"],
+        ["No",               "No",                 "No",                       "_",                         "Space",                  "Backspace",      "MO(3)",        "No",                "No",                  "No"]
     ],
     [
-        ["Kc1",              "Kc2",                "Kc3",                 "Kc4",                 "Kc5",                 "Kc6",            "Kc7",         "Kc8",              "Kc9",                 "Kc0"],
-        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",           "OSM(LGui)",           "F11",                 "F12",            "OSM(RGui)",   "OSM(RAlt)",        "OSM(RShift)",         "OSM(RCtrl)"],
-        ["F1",               "F2",                 "F3",                  "F4",                  "F5",                  "F6",             "F7",          "F8",               "F9",                  "F10"],
-        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "_",           "No",               "No",                  "No"]
+        ["Kc1",              "Kc2",                "Kc3",                      "Kc4",                      "Kc5",                     "Kc6",            "Kc7",           "Kc8",              "Kc9",                 "Kc0"],
+        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",                "OSM(LGui)",                "F11",                     "F12",            "OSM(RGui)",     "OSM(RAlt)",        "OSM(RShift)",         "OSM(RCtrl)"],
+        ["F1",               "F2",                 "F3",                       "F4",                       "F5",                      "F6",             "F7",            "F8",               "F9",                  "F10"],
+        ["No",               "No",                 "No",                       "_",                        "Space",                   "Backspace",      "_",             "No",               "No",                  "No"]
     ]
 ]
 
