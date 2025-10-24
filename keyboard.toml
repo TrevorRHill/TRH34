@@ -12,9 +12,9 @@ input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
 output_pins = ["PIN_20", "PIN_19", "PIN_18", "PIN_17", "PIN_16", "PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11"]
 
 [layout]
-rows = 4
-cols = 10
-layers = 4
+rows = 4 
+cols = 10 
+layers = 4 
 keymap = [
     [    
         ["Q",                "W",                   "E",                       "R",                         "T",                      "Y",              "U",            "I",                 "O",                   "P"],
