@@ -61,5 +61,3 @@ combos = [
 [behavior.one_shot]
 timeout = "2s"
 
-#[ble]
-#enabled = true
