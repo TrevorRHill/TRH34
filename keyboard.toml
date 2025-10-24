@@ -7,14 +7,13 @@ manufacturer = "TRHKeyboards"
 chip = "rp2040"
 
 [matrix]
-# Input and output pins are mandatory
 input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
 output_pins = ["PIN_20", "PIN_19", "PIN_18", "PIN_17", "PIN_16", "PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11"]
 
 [layout]
 rows = 4 
 cols = 10 
-layers = 4 
+layers = 5 
 keymap = [
     [    
         ["Q",                "W",                   "E",                       "R",                         "T",                      "Y",              "U",            "I",                 "O",                   "P"],
@@ -42,22 +41,22 @@ keymap = [
    ]
 ]
 
-# [storage]
-# Storage feature is enabled by default
-# enabled = true
-# num_sectors = 32
+[storage]
+Storage feature is enabled by default
+enabled = true
+num_sectors = 32
 
-# [behavior]
-# tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+[behavior]
+tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
 
-# [behavior.combo]
-# timeout = "150ms"
-# combos = [
-#  { actions = ["L", "Semicolon"], output = "Escape" },
-#  { actions = ["O", "P"],         output = "Backspace"},
-#  { actions = ["I", "P"],         output = "Delete"}
-# ]
+[behavior.combo]
+timeout = "150ms"
+combos = [
+ { actions = ["L", "Semicolon"], output = "Escape" },
+ { actions = ["O", "P"],         output = "Backspace"},
+ { actions = ["I", "P"],         output = "Delete"}
+]
 
-# [behavior.one_shot]
-# timeout = "2s"
+[behavior.one_shot]
+timeout = "2s"
 
