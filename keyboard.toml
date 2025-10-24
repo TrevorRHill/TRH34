@@ -1,50 +1,84 @@
-# Documentation: https://haobogu.github.io/rmk/keyboard_configuration.html
 [keyboard]
-name = "RMK Keyboard"
-product_name = "RMK Keyboard"
+name = "TRH34"
+product_name = "TRH34"
 vendor_id = 0x4c4b
 product_id = 0x4643
-manufacturer = "haobo"
-chip = "rp2040"
+manufacturer = "TRHKeyboards"
+board = "pi_pico_w"
 
 [matrix]
 # Input and output pins are mandatory
 input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
-output_pins = ["PIN_19", "PIN_20", "PIN_21"]
-# WARNING: Currently row2col/col2row is set in RMK's feature gate, configs here do nothing actually
-# row2col = true
+output_pins = ["PIN_20", "PIN_19", "PIN_18", "PIN_17", "PIN_16", "PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11"]
+
+[aliases]
+ACtrl   = LT(A, LCtrl)
+SShift  = LT(S, LShift)
+DAlt    = LT(D, LAlt)
+FWin    = LT(F, LGui)
+SCCtrl  = LT(Semicolon, RCtrl)
+LShift  = LT(L, RShift)
+KAlt    = LT(K, RAlt)
+JWin    = LT(J, RGui)
+LBrack  = LeftBracket
+RBrack  = RightBracket
+BSlash  = Backslash
 
 [layout]
 rows = 4
-cols = 3
-layers = 2
+cols = 10
+layers = 4
 keymap = [
-    [
-        ["A", "B", "C"],
-        ["Kc1", "Kc2", "Kc3"],
-        ["LCtrl", "MO(1)", "LShift"],
-        ["OSL(1)", "LT(2, Kc9)", "LM(1, LShift | LGui)"]
+    [   #   DEFAULT LAYER 0
+
+       # PIN_20              PIN_19                 PIN_18                PIN_17                 PIN_16                 PIN_15            PIN_14        PIN_13               PIN_12                 PIN_11
+        
+        ["Q",                "W",                   "E",                  "R",                   "T",                   "Y",              "U",          "I",                 "O",                   "P"],      # PIN_6
+        ["ACtrl",            "SShift",              "DAlt",               "FWin",                "G",                   "H",              "JWin",       "KAlt",              "LShift",              "SCCtrl"], # PIN_7
+        ["Z",                "X",                   "C",                  "V",                   "B",                   "Quote",          "N",          "M",                 "Comma",               "Dot"],    # PIN_8
+        ["No",               "No",                  "No",                 "MO(2)",               "Space",               "Backspace",      "MO(1)",      "No",                "No",                  "No"]      # PIN_9
     ],
-    [
-        ["_", "TT(1)", "TG(2)"],
-        ["_", "_", "_"],
-        ["_", "_", "_"],
-        ["_", "_", "_"]
+    [   #   SYMBOL  LAYER 1
+
+        ["Escape",           "WM(Grave, LShift)",  "WM(LBrack, LShift)",  "WM(RBrack, LShift)",  "Grave",               "Semicolon",      "LBrack",     "RBrack",            "WM(Kc9, RShift)",     "WM(Kc0, RShift)"],
+        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",     "WM(Kc4, LShift)",     "WM(Kc5, LShift)",     "Minus",          "OSM(RGui)",  "OSM(RAlt)",         "OSM(RShift)"          "OSM(RCtrl)"],
+        ["WM(Kc6, LShift)",  "WM(Kc7, LShift)",    "Backslash",           "Slash",               "WM(BSlash, LShift)",  "Equal",          "Plus",       "WM(Kc8, LShift)",   "WM(Slash , RShift)",  "WM(Kc1, LShift)"],
+        ["No",               "No",                 "No",                  "MO(3)",               "Space",               "Backspace",      "_",          "No",                "No",                  "No"]
     ],
+    [   #   NAV     LAYER 2
+
+        ["Escape",           "KbMute",             "E",                   "R",                   "No",                  "PageUp",         "Home",       "Up",                "End",                 "Delete"],
+        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",           "OSM(LGui)",           "No",                  "Tab",            "Left",       "Down",              "Right",               "Enter"],
+        ["KbVolumeDown",     "KbVolumeDown",       "C",                   "V",                   "B",                   "PageDown",       "No",         "No",                "No",                  "No"],
+        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "MO(3)",      "No,                 "No",                  "No"]
+    ],
+    [   #   NUMBER  LAYER 3
+
+        ["Kc1",              "Kc2",                "Kc3",                 "Kc4",                 "Kc5",                 "Kc6",            "Kc7",         "Kc8",              "Kc9",                 "Kc0"],
+        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",           "OSM(LGui)",           "F11",                 "F12",            "OSM(RGui)",   "OSM(RAlt)",        "OSM(RShift)"          "OSM(RCtrl)"],
+        ["F1",               "F2",                 "F3",                  "F4",                  "F5",                  "F6",             "F7",          "F8",               "F9",                  "F10"],
+        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "_",           "No",               "No",                  "No"]
+    ]
 ]
-
-[light]
-# All light pins are high-active by default, uncomment if you want it to be low-active
-# capslock.pin = "PB2"
-# capslock.low_active = true
-# scrolllock.pin = "PA3"
-# scrolllock.low_active = true
-# Just ignore if no light pin is used for it
-# numslock.pin = "PA5"
-# numslock.low_active = true
-
-
 
 [storage]
 # Storage feature is enabled by default
-# enabled = false
+enabled = true
+num_sectors = 32
+
+[behavior]
+tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+
+[behavior.combo]
+timeout = "150ms"
+combos = [
+  { actions = ["L", "Semicolon"], output = "Escape" },
+  { actions = ["O", "P"],         output = "Backspace"},
+  { actions = ["I", "P"],         output = "Delete"}
+]
+
+[behavior.one_shot]
+timeout = "2s"
+
+[ble]
+enabled = true
