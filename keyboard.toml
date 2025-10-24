@@ -4,7 +4,7 @@ product_name = "TRH34"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "TRHKeyboards"
-board = "pi_pico_w"
+chip = "rp2040"
 
 [matrix]
 # Input and output pins are mandatory
@@ -74,5 +74,5 @@ combos = [
 [behavior.one_shot]
 timeout = "2s"
 
-[ble]
-enabled = true
+#[ble]
+#enabled = true
