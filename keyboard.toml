@@ -45,7 +45,7 @@ keymap = [
         ["Escape",           "KbMute",             "E",                   "R",                   "No",                  "PageUp",         "Home",       "Up",                "End",                 "Delete"],
         ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",           "OSM(LGui)",           "No",                  "Tab",            "Left",       "Down",              "Right",               "Enter"],
         ["KbVolumeDown",     "KbVolumeDown",       "C",                   "V",                   "B",                   "PageDown",       "No",         "No",                "No",                  "No"],
-        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "MO(3)",      "No,                 "No",                  "No"]
+        ["No",               "No",                 "No",                  "_",                   "Space",               "Backspace",      "MO(3)",      "No",                 "No",                  "No"]
     ],
     [
         ["Kc1",              "Kc2",                "Kc3",                 "Kc4",                 "Kc5",                 "Kc6",            "Kc7",         "Kc8",              "Kc9",                 "Kc0"],
