@@ -12,17 +12,17 @@ input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
 output_pins = ["PIN_20", "PIN_19", "PIN_18", "PIN_17", "PIN_16", "PIN_15", "PIN_14", "PIN_13", "PIN_12", "PIN_11"]
 
 [aliases]
-ACtrl   = LT(A, LCtrl)
-SShift  = LT(S, LShift)
-DAlt    = LT(D, LAlt)
-FWin    = LT(F, LGui)
-SCCtrl  = LT(Semicolon, RCtrl)
-LShift  = LT(L, RShift)
-KAlt    = LT(K, RAlt)
-JWin    = LT(J, RGui)
-LBrack  = LeftBracket
-RBrack  = RightBracket
-BSlash  = Backslash
+ACtrl   = "LT(A, LCtrl)"
+SShift  = "LT(S, LShift)"
+DAlt    = "LT(D, LAlt)"
+FWin    = "LT(F, LGui)"
+SCCtrl  = "LT(Semicolon, RCtrl)"
+LShift  = "LT(L, RShift)"
+KAlt    = "LT(K, RAlt)"
+JWin    = "LT(J, RGui)"
+LBrack  = "LeftBracket"
+RBrack  = "RightBracket"
+BSlash  = "Backslash"
 
 [layout]
 rows = 4
