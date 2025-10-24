@@ -47,17 +47,17 @@ keymap = [
 # enabled = true
 # num_sectors = 32
 
-[behavior]
-tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
+# [behavior]
+# tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
 
-[behavior.combo]
-timeout = "150ms"
-combos = [
-  { actions = ["L", "Semicolon"], output = "Escape" },
-  { actions = ["O", "P"],         output = "Backspace"},
-  { actions = ["I", "P"],         output = "Delete"}
-]
+# [behavior.combo]
+# timeout = "150ms"
+# combos = [
+#  { actions = ["L", "Semicolon"], output = "Escape" },
+#  { actions = ["O", "P"],         output = "Backspace"},
+#  { actions = ["I", "P"],         output = "Delete"}
+# ]
 
-[behavior.one_shot]
-timeout = "2s"
+# [behavior.one_shot]
+# timeout = "2s"
 
