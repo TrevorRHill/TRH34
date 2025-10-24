@@ -37,7 +37,7 @@ keymap = [
     ],
     [
         ["Escape",           "WM(Grave, LShift)",  "WM(LBrack, LShift)",  "WM(RBrack, LShift)",  "Grave",               "Semicolon",      "LBrack",     "RBrack",            "WM(Kc9, RShift)",     "WM(Kc0, RShift)"],
-        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",     "WM(Kc4, LShift)",     "WM(Kc5, LShift)",     "Minus",          "OSM(RGui)",  "OSM(RAlt)",         "OSM(RShift)"          "OSM(RCtrl)"],
+        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",     "WM(Kc4, LShift)",     "WM(Kc5, LShift)",     "Minus",          "OSM(RGui)",  "OSM(RAlt)",         "OSM(RShift)",          "OSM(RCtrl)"],
         ["WM(Kc6, LShift)",  "WM(Kc7, LShift)",    "Backslash",           "Slash",               "WM(BSlash, LShift)",  "Equal",          "Plus",       "WM(Kc8, LShift)",   "WM(Slash , RShift)",  "WM(Kc1, LShift)"],
         ["No",               "No",                 "No",                  "MO(3)",               "Space",               "Backspace",      "_",          "No",                "No",                  "No"]
     ],
