@@ -4,7 +4,7 @@ product_name = "TRH34"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "TRHKeyboards"
-chip = "pico_w_ble"
+chip = "rp2040"
 
 [matrix]
 input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
