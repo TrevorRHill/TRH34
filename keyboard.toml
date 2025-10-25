@@ -53,11 +53,4 @@ combos = [
  { actions = ["I", "P"],         output = "Delete"}
 ]
 
-[behavior.tap_hold]
-enable_hrm = true # Enable Hold-Release-Modifier
-permissive_hold = true # Allow holding a key while other keys are pressed
-chordal_hold = true # Consider a hold if other keys are pressed simultaneously
-hold_on_other_press = true # Hold is registered even if another key is pressed
-prior_idle_time = "120ms" # Time before a tap-hold key is considered for hold
-hold_timeout = "250ms" # Time to differentiate between tap and hold
 
