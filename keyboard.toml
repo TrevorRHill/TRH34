@@ -17,7 +17,7 @@ layers = 5
 keymap = [
     [    
         ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",                "I",             "O",               "P"],
-        ["MT(LCtrl, A)",   "MT(LShift, S)",    "MT(LAlt, D)",           "MT(LGui, F)",            "G",                   "H",              "MT(RGui, J)",      "MT(RAlt, K)",   "MT(RShift, L)",   "MT(RCtrl, Semicolon)"],
+        ["MT(LCtrl, A)",   "MT(LShift, S)",    "MT(LAlt, D)",           "F",                      "G",                   "H",              "J",      "MT(RAlt, K)",   "MT(RShift, L)",   "MT(RCtrl, Semicolon)"],
         ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",                "M",             "Comma",           "Dot"],
         ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "No",            "No",              "No"]
     ],
@@ -45,9 +45,6 @@ keymap = [
 enabled = true
 num_sectors = 32
 
-[behavior]
-tap_hold = { enable_hrm = true, prior_idle_time = "120ms", hold_timeout = "250ms", post_wait_time = "50ms"}
-
 [behavior.combo]
 timeout = "150ms"
 combos = [
@@ -56,6 +53,4 @@ combos = [
  { actions = ["I", "P"],         output = "Delete"}
 ]
 
-[behavior.one_shot]
-timeout = "2s"
 
