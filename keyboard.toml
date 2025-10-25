@@ -4,7 +4,7 @@ product_name = "TRH34"
 vendor_id = 0x4c4b
 product_id = 0x4643
 manufacturer = "TRHKeyboards"
-chip = "rp2040"
+chip = "pico_w_ble"
 
 [matrix]
 input_pins = ["PIN_6", "PIN_7", "PIN_8", "PIN_9"]
@@ -16,28 +16,28 @@ cols = 10
 layers = 5 
 keymap = [
     [    
-        ["Q",                "W",                   "E",                       "R",                         "T",                      "Y",              "U",            "I",                 "O",                   "P"],
-        ["LT(A, LCtrl)",     "LT(S, LShift)",       "LT(D, LAlt)",             "LT(F, LGui)",               "G",                      "H",              "LT(J, RGui)",  "LT(K, RAlt)",       "LT(L, RShift)",       "LT(Semicolon, RCtrl)"],
-        ["Z",                "X",                   "C",                       "V",                         "B",                      "Quote",          "N",            "M",                 "Comma",               "Dot"],
-        ["No",               "No",                  "No",                      "MO(2)",                     "Space",                  "Backspace",      "MO(1)",        "No",                "No",                  "No"]
+        ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",            "I",             "O",               "P"],
+        ["TH(A, LCtrl)",   "TH(S, LShift)",    "TH(D, LAlt)",           "TH(F, LGui)",            "G",                   "H",              "TH(J, RGui)",  "TH(K, RAlt)",   "TH(L, RShift)",   "TH(Semicolon, RCtrl)"],
+        ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",            "M",             "Comma",           "Dot"],
+        ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",        "No",            "No",              "No"]
     ],
     [
-        ["Escape",           "WM(Grave, LShift)",  "WM(LeftBracket, LShift)",  "WM(RightBracket, LShift)",  "Grave",                  "Semicolon",      "LBrack",       "RBrack",            "WM(Kc9, RShift)",     "WM(Kc0, RShift)"],
-        ["WM(Kc1, LShift)",  "WM(Kc2, LShift)",    "WM(Kc3, LShift)",          "WM(Kc4, LShift)",           "WM(Kc5, LShift)",        "Minus",          "OSM(RGui)",    "OSM(RAlt)",         "OSM(RShift)",         "OSM(RCtrl)"],
-        ["WM(Kc6, LShift)",  "WM(Kc7, LShift)",    "Backslash",                "Slash",                     "WM(Backslash, LShift)",  "Equal",          "Plus",         "WM(Kc8, LShift)",   "WM(Slash , RShift)",  "WM(Kc1, LShift)"],
-        ["No",               "No",                 "No",                       "MO(3)",                     "Space",                  "Backspace",      "_",            "No",                "No",                  "No"]
+        ["Escape",         "SHIFTED(Grave)",   "SHIFTED(LeftBracket)",  "SHIFTED(RightBracket)",  "Grave",               "Semicolon",      "LBrack",       "RBrack",        "SHIFTED(Kc9)",    "SHIFTED(Kc0)"],
+        ["SHIFTED(Kc1)",   "WM(Kc2, LShift)",  "SHIFTED(Kc3)",          "SHIFTED(Kc4)",           "SHIFTED(Kc5)",        "Minus",          "OSM(RGui)",    "OSM(RAlt)",     "OSM(RShift)",     "OSM(RCtrl)"],
+        ["SHIFTED(Kc6,)",  "WM(Kc7, LShift)",  "Backslash",             "Slash",                  "SHIFTED(Backslash)",  "Equal",          "Plus",         "SHIFTED(Kc8)",  "SHIFTED(Slash)",  "SHIFTED(Kc1)"],
+        ["No",             "No",               "No",                    "MO(3)",                  "Space",               "Backspace",      "_",            "No",            "No",              "No"]
     ],
     [
-        ["Escape",           "KbMute",             "E",                        "R",                         "No",                     "PageUp",         "Home",         "Up",                "End",                 "Delete"],
-        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",                "OSM(LGui)",                 "No",                     "Tab",            "Left",         "Down",              "Right",               "Enter"],
-        ["KbVolumeDown",     "KbVolumeDown",       "C",                        "V",                         "B",                      "PageDown",       "No",           "No",                "No",                  "No"],
-        ["No",               "No",                 "No",                       "_",                         "Space",                  "Backspace",      "MO(3)",        "No",                "No",                  "No"]
+        ["Escape",         "KbMute",          "E",                      "R",                      "No",                  "PageUp",         "Home",         "Up",            "End",             "Delete"],
+        ["OSM(LCtrl)",     "OSM(LShift)",     "OSM(LAlt)",              "OSM(LGui)",              "No",                  "Tab",            "Left",         "Down",          "Right",           "Enter"],
+        ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "No",           "No",            "No",              "No"],
+        ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "MO(3)",        "No",            "No",              "No"]
     ],
     [
-        ["Kc1",              "Kc2",                "Kc3",                      "Kc4",                      "Kc5",                     "Kc6",            "Kc7",           "Kc8",              "Kc9",                 "Kc0"],
-        ["OSM(LCtrl)",       "OSM(LShift)",        "OSM(LAlt)",                "OSM(LGui)",                "F11",                     "F12",            "OSM(RGui)",     "OSM(RAlt)",        "OSM(RShift)",         "OSM(RCtrl)"],
-        ["F1",               "F2",                 "F3",                       "F4",                       "F5",                      "F6",             "F7",            "F8",               "F9",                  "F10"],
-        ["No",               "No",                 "No",                       "_",                        "Space",                   "Backspace",      "_",             "No",               "No",                  "No"]
+        ["Kc1",            "Kc2",             "Kc3",                    "Kc4",                    "Kc5",                 "Kc6",            "Kc7",          "Kc8",           "Kc9",             "Kc0"],
+        ["OSM(LCtrl)",     "OSM(LShift)",     "OSM(LAlt)",              "OSM(LGui)",              "F11",                 "F12",            "OSM(RGui)",    "OSM(RAlt)",     "OSM(RShift)",     "OSM(RCtrl)"],
+        ["F1",             "F2",              "F3",                     "F4",                     "F5",                  "F6",             "F7",           "F8",            "F9",              "F10"],
+        ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "_",            "No",            "No",              "No"]
    ]
 ]
 
@@ -59,3 +59,5 @@ combos = [
 [behavior.one_shot]
 timeout = "2s"
 
+[ble]
+enabled = true
