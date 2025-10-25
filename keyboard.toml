@@ -22,7 +22,7 @@ keymap = [
         ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",        "No",            "No",              "No"]
     ],
     [
-        ["Escape",         "SHIFTED(Grave)",   "SHIFTED(LeftBracket)",  "SHIFTED(RightBracket)",  "Grave",               "Semicolon",      "LBrack",       "RBrack",        "SHIFTED(Kc9)",    "SHIFTED(Kc0)"],
+        ["Escape",         "SHIFTED(Grave)",   "SHIFTED(LeftBracket)",  "SHIFTED(RightBracket)",  "Grave",               "Semicolon",      "LeftBracket",  "RightBracket",  "SHIFTED(Kc9)",    "SHIFTED(Kc0)"],
         ["SHIFTED(Kc1)",   "SHIFTED(Kc2)",     "SHIFTED(Kc3)",          "SHIFTED(Kc4)",           "SHIFTED(Kc5)",        "Minus",          "OSM(RGui)",    "OSM(RAlt)",     "OSM(RShift)",     "OSM(RCtrl)"],
         ["SHIFTED(Kc6)",   "SHIFTED(Kc7)",     "Backslash",             "Slash",                  "SHIFTED(Backslash)",  "Equal",          "Plus",         "SHIFTED(Kc8)",  "SHIFTED(Slash)",  "SHIFTED(Kc1)"],
         ["No",             "No",               "No",                    "MO(3)",                  "Space",               "Backspace",      "_",            "No",            "No",              "No"]
