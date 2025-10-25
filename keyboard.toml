@@ -17,7 +17,7 @@ layers = 5
 keymap = [
     [    
         ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",                "I",             "O",               "P"],
-        ["TH(A-tap, LCtrl-hold)",   "TH(S-tap, LShift-hold)",    "TH(D-tap, LAlt-hold)",           "TH(F-tap, LGui-hold)",             "G",                   "H",              "TH(J-tap, RGui-hold)",     "TH(K-tap, RAlt-hold)",   "TH(L-tap, RShift-hold)",   "TH(Semicolon-tap, RCtrl-hold"],
+        ["TH(A, LCtrl)",   "TH(S, LShift)",    "TH(D, LAlt)",           "TH(F, LGui)",             "G",                   "H",              "TH(J, RGui)",     "TH(K, RAlt)",   "TH(L, RShift)",   "TH(Semicolon, RCtrl"],
         ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",                "M",             "Comma",           "Dot"],
         ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "No",            "No",              "No"]
     ],
