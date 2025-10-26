@@ -54,7 +54,8 @@ combos = [
  { actions = ["J", "K"],         output = "LCtrl"},
  { actions = ["D", "F"],         output = "LShift"},
  { actions = ["J", "K"],         output = "RShift"},
- { actions = ["Q", "W"],         output = "Escape"}
+ { actions = ["Q", "W"],         output = "Escape"},
+ { actions = ["Y", "U"],         output = "LAlt"},
 ]
 
 
