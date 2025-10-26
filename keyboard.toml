@@ -30,7 +30,7 @@ keymap = [
     [
         ["Escape",         "KbMute",          "E",                      "R",                      "_",                   "PageUp",         "Home",              "Up",            "End",             "Delete"],
         ["_",              "_",               "_",                      "_",                      "_",                   "Tab",            "Left",              "Down",          "Right",           "Enter"],
-        ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "RGui"],
+        ["KbVolumeDown",   "KbVolumeUp",      "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "RGui"],
         ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "MO(3)",            "No",            "No",              "No"]
     ],
     [
@@ -50,7 +50,7 @@ timeout = "150ms"
 combos = [
  { actions = ["K", "L"],         output = "Enter" },
  { actions = ["L", "Semicolon"], output = "Delete"},
- { actions = ["J", "K"],         output = "LCtrl"},
+ { actions = ["N", "M"],         output = "LCtrl"},
  { actions = ["D", "F"],         output = "LShift"},
  { actions = ["J", "K"],         output = "RShift"},
  { actions = ["Q", "W"],         output = "Escape"},
