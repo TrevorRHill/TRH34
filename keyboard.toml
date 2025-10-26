@@ -28,9 +28,9 @@ keymap = [
         ["No",             "No",               "No",                    "MO(3)",                  "Space",               "Backspace",      "_",                 "No",            "No",              "No"]
     ],
     [
-        ["Escape",         "KbMute",          "E",                      "R",                      "_",                  "PageUp",         "Home",              "Up",            "End",             "Delete"],
+        ["Escape",         "KbMute",          "E",                      "R",                      "LGui",               "PageUp",         "Home",              "Up",            "End",             "Delete"],
         ["_",              "_",               "_",                      "_",                      "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
-        ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "_"],
+        ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "RGui"],
         ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "MO(3)",            "No",            "No",              "No"]
     ],
     [
@@ -56,6 +56,7 @@ combos = [
  { actions = ["J", "K"],         output = "RShift"},
  { actions = ["Q", "W"],         output = "Escape"},
  { actions = ["Y", "U"],         output = "LAlt"},
+ { actions = ["W", "E"],         output = "LGui"}
 ]
 
 
