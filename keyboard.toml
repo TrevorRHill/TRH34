@@ -47,10 +47,8 @@ num_sectors = 32
 
 [behavior.combo]
 timeout = "150ms"
-combo_max_num = 9
 combos = [
  { actions = ["K", "L"],         output = "Enter" },
- { actions = ["O", "P"],         output = "Backspace"},
  { actions = ["L", "Semicolon"], output = "Delete"},
  { actions = ["J", "K"],         output = "LCtrl"},
  { actions = ["D", "F"],         output = "LShift"},
