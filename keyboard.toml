@@ -17,7 +17,7 @@ layers = 5
 keymap = [
     [    
         ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",                "I",             "O",               "P"],
-        ["MT(A, LCtrl)",   "MT(S, LShift)",    "MT(D, LAlt)",           "MT(F, LGui)",            "G",                   "H",              "MT(J, RGui)",      "MT(K, RAlt)",   "MT(L, RShift)",    "MT(Semicolon, RCtrl)"],
+        ["MT(A, LCtrl)",   "MT(S, LShift)",    "MT(D, LAlt)",           "MT(F, LGui)",            "G",                   "H",              "MT(J, RGui)",      "MT(K, RAlt)",   "MT(L, RShift)",   "MT(Semicolon, RCtrl)"],
         ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",                "M",             "Comma",           "Dot"],
         ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "No",            "No",              "No"]
     ],
@@ -27,7 +27,7 @@ keymap = [
         ["SHIFTED(Kc6)",   "SHIFTED(Kc7)",     "Backslash",             "Slash",                  "SHIFTED(Backslash)",  "Equal",          "SHIFTED(Equal)",   "SHIFTED(Kc8)",  "SHIFTED(Slash)",  "SHIFTED(Kc1)"],
         ["No",             "No",               "No",                    "MO(3)",                  "Space",               "Backspace",      "_",                "No",            "No",              "No"]
     ],
-    [
+    [   ABC
         ["Escape",         "KbMute",          "E",                      "R",                      "_",                  "PageUp",         "Home",              "Up",            "End",             "Delete"],
         ["_",               "_",              "_",                      "_ ",                     "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
         ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "_"],
