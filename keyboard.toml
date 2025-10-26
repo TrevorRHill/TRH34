@@ -17,27 +17,27 @@ layers = 4
 keymap = [
     [    
         ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",                "I",             "O",               "P"],
-        ["A",              "S",                "D",                     "F",                      "G",                   "H",              "J",                "K",             "L",               "Semicolon"],
+        ["MT(A, LCtrl)",   "MT(S, LShift)",    "MT(D, LAlt)",           "MT(F, LGui)",            "G",                   "H",              "MT(J, RGui)",      "MT(K, RAlt)",   "MT(L, RShift)",   "MT(Semicolon, RCtrl)"],
         ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",                "M",             "Comma",           "Dot"],
-        ["_",             "_",               "_",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "_",            "_",              "_"]
+        ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "No",            "No",              "No"]
     ],
     [
         ["Escape",         "SHIFTED(Grave)",   "SHIFTED(LeftBracket)",  "SHIFTED(RightBracket)",  "Grave",               "Semicolon",      "LeftBracket",      "RightBracket",  "SHIFTED(Kc9)",    "SHIFTED(Kc0)"],
-        ["SHIFTED(Kc1)",   "SHIFTED(Kc2)",     "SHIFTED(Kc3)",          "SHIFTED(Kc4)",           "SHIFTED(Kc5)",        "Minus",          "_",                "_",             "_",               "_"],
+        ["SHIFTED(Kc1)",   "SHIFTED(Kc2)",     "SHIFTED(Kc3)",          "SHIFTED(Kc4)",           "SHIFTED(Kc5)",        "Minus",          "OSM(RGui)",        "OSM(RAlt)",     "OSM(RShift)",     "OSM(RCtrl)"],
         ["SHIFTED(Kc6)",   "SHIFTED(Kc7)",     "Backslash",             "Slash",                  "SHIFTED(Backslash)",  "Equal",          "SHIFTED(Equal)",   "SHIFTED(Kc8)",  "SHIFTED(Slash)",  "SHIFTED(Kc1)"],
-        ["_",             "_",               "_",                    "MO(3)",                  "Space",               "Backspace",      "_",                "_",            "_",              "_"]
+        ["No",             "No",               "No",                    "MO(3)",                  "Space",               "Backspace",      "_",                 "No",            "No",              "No"]
     ],
     [
         ["Escape",         "KbMute",          "E",                      "R",                      "_",                  "PageUp",         "Home",              "Up",            "End",             "Delete"],
-        ["_",               "_",              "_",                      "_",                      "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
+        ["OSM(LCtrl)",     "OSM(LShift)",     "OSM(LAlt)",              "OSM(LGui)",              "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
         ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "_"],
-        ["_",             "_",              "_",                     "_",                      "Space",               "Backspace",      "MO(3)",            "_",            "_",              "_"]
+        ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "MO(3)",            "No",            "No",              "No"]
     ],
     [
         ["SHIFTED(Kc1)",   "SHIFTED(Kc2)",    "SHIFTED(Kc3)",           "SHIFTED(Kc4)",           "SHIFTED(Kc5)",        "SHIFTED(Kc6)",   "SHIFTED(Kc7)",    "SHIFTED(Kc8)",  "SHIFTED(Kc9)",    "SHIFTED(Kc0)"],
         ["Kc1",            "Kc2",             "Kc3",                    "Kc4",                    "Kc5",                 "Kc6",            "Kc7",             "Kc8",           "Kc9",             "Kc0"],
         ["F1",             "F2",              "F3",                     "F4",                     "F5",                  "F6",             "F7",              "F8",            "F9",              "F10"],
-        ["_",             "_",              "_",                     "_",                      "Space",               "Backspace",      "_",               "_",            "_",              "_"]
+        ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "_",               "No",            "No",              "No"]
    ]
 ]
 
@@ -53,7 +53,8 @@ combos = [
  { actions = ["L", "Semicolon"], output = "Delete"},
  { actions = ["J", "K"],         output = "LCtrl"},
  { actions = ["D", "F"],         output = "LShift"},
- { actions = ["J", "K"],         output = "RShift"}
+ { actions = ["J", "K"],         output = "RShift"},
+ { actions = ["Q", "W"],         output = "Escape"
 ]
 
 
