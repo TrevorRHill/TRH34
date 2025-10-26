@@ -17,7 +17,7 @@ layers = 4
 keymap = [
     [    
         ["Q",              "W",                "E",                     "R",                      "T",                   "Y",              "U",                "I",             "O",               "P"],
-        ["MT(A, LCtrl)",   "MT(S, LShift)",    "MT(D, LAlt)",           "MT(F, LGui)",            "G",                   "H",              "MT(J, RGui)",      "MT(K, RAlt)",   "MT(L, RShift)",   "MT(Semicolon, RCtrl)"],
+        ["A",              "S",                "D",                     "F",                      "G",                   "H",              "J",                "K",             "L",               "Semicolon"],
         ["Z",              "X",                "C",                     "V",                      "B",                   "Quote",          "N",                "M",             "Comma",           "Dot"],
         ["No",             "No",               "No",                    "MO(2)",                  "Space",               "Backspace",      "MO(1)",            "No",            "No",              "No"]
     ],
