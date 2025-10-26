@@ -29,7 +29,7 @@ keymap = [
     ],
     [
         ["Escape",         "KbMute",          "E",                      "R",                      "_",                  "PageUp",         "Home",              "Up",            "End",             "Delete"],
-        ["_",               "_",              "_",                      "_ ",                     "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
+        ["_",               "_",              "_",                      "_",                      "_",                  "Tab",            "Left",              "Down",          "Right",           "Enter"],
         ["KbVolumeDown",   "KbVolumeDown",    "C",                      "V",                      "B",                   "PageDown",       "_",                "_",             "_",               "_"],
         ["No",             "No",              "No",                     "_",                      "Space",               "Backspace",      "MO(3)",            "No",            "No",              "No"]
     ],
